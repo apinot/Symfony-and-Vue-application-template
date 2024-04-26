@@ -1,0 +1,11 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+vue:
+    path: '/{fallbackRoute}'
+    controller: App\Contract\Http\FallbackController
+    requirements:
+        fallbackRoute: '.*'
